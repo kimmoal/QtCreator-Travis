@@ -1,0 +1,13 @@
+{
+    "Name" : "MyPlugin",
+    "Version" : "0.0.1",
+    "CompatVersion" : "0.0.1",
+    "Vendor" : "MyCompany",
+    "Copyright" : "(C) MyCompany",
+    "License" : "Put your license information here",
+    "Description" : "Put a short description of your plugin here",
+    "Url" : "http://www.mycompany.com",
+    "Dependencies" : [
+        { "Name" : "Core", "Version" : "4.3.1" }
+    ]
+}
