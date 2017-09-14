@@ -13,6 +13,7 @@ env:
     - QTC_SOURCE=${TRAVIS_BUILD_DIR}/${QTC_VERSION}
     - QTC_LIBRARY_BASENAME=lib/x86_64-linux-gnu
     - PROJECT_PRO_FILE="myplugin.pro"
+    - BUILD_OUTPUT_PATH=${TRAVIS_BUILD_DIR}
     - QMAKE_PARAMS="-spec linux-g++"
 
 install:
