@@ -26,7 +26,7 @@ install:
   - mkdir -p ${QTC_SOURCE} && tar xf ${QTC_VERSION}*.tar* -C ${QTC_SOURCE} --strip-components=1
 
 script:
-  - source /opt/${QT_MAJOR}/bin/qt${QT_MAJOR}-env.sh
+  - source /opt/${QT_MAJOR}/bin/${QT_MAJOR}-env.sh
   - echo "Executing qmake..."
   - qmake ${PROJECT_PRO_FILE} -r ${QMAKE_PARAMS}
   - make
