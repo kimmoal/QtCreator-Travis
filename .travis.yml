@@ -23,7 +23,7 @@ install:
   - sudo apt-get install ${QTC_VERSION} gcc-4.8 g++-4.8 
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 90 
   - apt source ${QTC_VERSION} --tar-only
-  - mkdir -p ${QTC_SOURCE} && tar xf ${QTC_VERSION}* -C ${QTC_SOURCE} --strip-components=1
+  - mkdir -p ${QTC_SOURCE} && tar xf ${QTC_VERSION}*.tar* -C ${QTC_SOURCE} --strip-components=1
 
 script:
   - source /opt/${QT_MAJOR}/bin/qt${QT_MAJOR}-env.sh
