@@ -5,14 +5,15 @@ language: cpp
 compiler: gcc
 
 env:
-  - QT_MAJOR=qt59
-  - QT_MINOR=qt591
-  - QTC_VERSION=${QT_MAJOR}creator
-  - QTC_BUILD=/opt/${QT_MAJOR}/
-  - QTC_SOURCE=${TRAVIS_BUILD_DIR}/${QTC_VERSION}
-  - QTC_LIBRARY_BASENAME=lib/x86_64-linux-gnu
-  - PROJECT_PRO_FILE="plugin.pro"
-  - QMAKE_PARAMS="-spec linux-g++"
+  global:
+    - QT_MAJOR=qt59
+    - QT_MINOR=qt591
+    - QTC_VERSION=${QT_MAJOR}creator
+    - QTC_BUILD=/opt/${QT_MAJOR}/
+    - QTC_SOURCE=${TRAVIS_BUILD_DIR}/${QTC_VERSION}
+    - QTC_LIBRARY_BASENAME=lib/x86_64-linux-gnu
+    - PROJECT_PRO_FILE="plugin.pro"
+    - QMAKE_PARAMS="-spec linux-g++"
 
 install:
   - echo "Installing ${QTC_VERSION} with ${QT_MINOR}"
